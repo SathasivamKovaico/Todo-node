@@ -1,0 +1,39 @@
+# ===========================================
+# GIT IGNORE FILE
+# ===========================================
+# This file tells Git which files/folders to ignore
+# when tracking changes in version control
+# ===========================================
+
+# Dependencies
+# node_modules contains all npm packages - very large!
+# These are reinstalled via 'npm install' using package.json
+node_modules/
+
+# Environment files
+# Contains sensitive data like database passwords
+# Each developer should create their own .env file
+.env
+.env.local
+.env.*.local
+
+# Log files
+# Generated during runtime, not needed in repo
+logs/
+*.log
+npm-debug.log*
+
+# OS generated files
+# System files that vary between machines
+.DS_Store
+Thumbs.db
+
+# IDE/Editor files
+# Personal editor configurations
+.vscode/
+.idea/
+
+# Build outputs
+# Generated files, not source code
+dist/
+build/
